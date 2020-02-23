@@ -42,3 +42,9 @@ header h1 .text-muted {
     text-align: center;
 }
 
+.honey p {
+    font-size: 30px;
+    background-color: grey;
+    text-align: center;
+}
+
