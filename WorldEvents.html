@@ -4,12 +4,12 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
         <header>
-            <h1>
-                <u>
-                FactChain</u>
-                <small class="text-muted">Real News from True People</small>
-                
-            </h1>
+            <div class="container">
+                <h1>
+                    <u class="Chain">Chain</u><u>Facts</u>
+                    <small class="text-muted">Real News from The People</small>  
+                </h1>
+            </div>
         </header>
     </head>
     <body>
@@ -27,17 +27,7 @@
                 <li class="nav-item">
                 <a class="nav-link" href="AboutMe.html">About Us</a>
                 </li>
-                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-                </li>
+                
                 <li class="nav-item">
                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                 </li>
@@ -77,36 +67,23 @@
                 </div>
             </div>
         </div>
-        <br>
-        <center>
-        <form action="/submit" id="textform" method="post">
-            <textarea name="content" rows="4" cols="50" placeholder="Just write whatever you want to..."></textarea>
-            <br>
-            <input type="text" name="author" placeholder="Your name">
-            <input type="submit" value="Post">
-        </form>
-        </center>
-    
-        <br>
-    
-        <a href="{{node_address}}/mine" target="_blank"><button>Request to mine</button></a>
-        <a href="/"><button>Resync</button></a>
-    
-        <div style="margin: 20px;">
-    
-        {% for post in posts %}
-        <div class="post_box">
-           <div class="post_box-header">
-              <div class="post_box-options"><button class="option-btn">Reply</button></div>
-              <div style="background: rgb(0, 97, 146) none repeat scroll 0% 0%; box-shadow: rgb(0, 97, 146) 0px 0px 0px 2px;" class="post_box-avatar">{{post.author[0]}}</div>
-              <div class="name-header">{{post.author}}</div>
-              <div class="post_box-subtitle"> Posted at <i>{{readable_time(post.timestamp)}}</i></div>
-           </div>
-           <div>
-              <div class="post_box-body">
-                 <p>{{post.content}}</p>
-              </div>
-           </div>
-        </div>
+            <form>
+            <div class="form-group">
+                <p>
+                    Sign up for our news letter!
+                </p>
+              <label for="exampleInputEmail1">Email Address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            
+            <div class="container">
+                <div class="row"></div>
+                    <div class="col text-center">
+            <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+          </form>
     </body>
 </html>
