@@ -1,0 +1,43 @@
+.form-group {
+    text-align: center;
+    color: black;
+    line-height: 4px;
+    position: relative;
+
+}
+
+.form-group p {
+    color: red;
+    font-weight: 10px;
+    size: 20px;
+    line-height: 15px;
+
+}
+
+.form-group label {
+    line-height: 15px;
+}
+
+.btn {
+    text-align: center;
+}
+
+
+header h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    position: relative
+}
+
+header h1 .text-muted {
+    font-size: 35px;
+}
+
+.card .card-text {
+    text-align: center;
+    font-size: 20px;
+}
+.mainhead h1 {
+    text-align: center;
+}
+
